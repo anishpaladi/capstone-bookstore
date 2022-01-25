@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: anishpaladicapstonebookstore 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: anishpaladicapstonebookstore
+  template:
+    metadata:
+      labels:
+        app: anishpaladicapstonebookstore 
+    spec:
+      containers:
+        - name: anishpaladicapstonebookstore 
+          image: containtellipat.azurecr.io/anishpaladicapstonebookstore
+          ports:
+          - containerPort: 8080
