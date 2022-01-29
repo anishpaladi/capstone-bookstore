@@ -1,7 +1,7 @@
 FROM ubuntu
-MAINTAINER saiteja
+MAINTAINER Anish Paladi
 WORKDIR /opt/java
-ADD openjdk-11.0.6_linux-x64_bin.tar.gz .
+ADD jdk-11.0.6_linux-x64_bin.tar.gz .
 ENV JAVA_HOME /opt/java/jdk-11.0.2
 ENV PATH $PATH:$JAVA_HOME/bin
 WORKDIR /opt/tomcat
